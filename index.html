@@ -1,0 +1,16 @@
+<!doctype html>
+<html style="height: 100%;overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <title>https test</title>
+</head>
+<body style="margin: 0;height: 100%;overflow: hidden;">
+<iframe id="page_cnt" src="https://www.pcwebshop.co.uk/" style="width:100%;height:-webkit-calc(100% - 29px);border:0;padding:0" nwUserAgent="DKRBRO" nwfaketop></iframe>
+<script type="text/javascript">
+    var gui = require('nw.gui'); //or global.window.nwDispatcher.requireNwGui() (see https://github.com/rogerwang/node-webkit/issues/707)
+    var win = gui.Window.get();
+    win.maximize();
+    win.showDevTools();
+</script>
+</body>
+</html>
